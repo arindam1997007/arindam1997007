@@ -1,57 +1,17 @@
-name: Update README with Dev Articles from RSS Feed
-
+name: Latest blog post workflow
 on:
-  schedule:
-    - cron: "0 0 * * *"
-  workflow_dispatch:
-  push:
-    branches: [ main ]
-
-env:
-  RSS_FEED_URL: "https://arindamchowdhury.hashnode.dev/rss.xml"
-
+ schedule: # Run workflow automatically
+   # This will make it run every hour
+   - cron: '0 0 * * *' 
+  # Run workflow manually (without waiting for the cron to be called), through the Github Actions Workflow page directly
+ workflow_dispatch: 
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 12.x
-
-      - name: Install Dependencies
-        run: npm install rss-parser
-
-      - name: Fetch RSS Feed
-        id: fetch_feed
-        run: |
-          const Parser = require('rss-parser');
-          const parser = new Parser();
-          const feed = await parser.parseURL(process.env.RSS_FEED_URL);
-          const items = feed.items;
-
-          console.log(`Fetched ${items.length} items from ${process.env.RSS_FEED_URL}`);
-
-          // Set the output of this step to the items array
-          console.log(JSON.stringify(items));
-          console.log(`::set-output name=items::${JSON.stringify(items)}`);
-
-      - name: Update README with Dev Articles
-        run: |
-          for item in $(echo "${{ steps.fetch_feed.outputs.items }}" | jq -r '.[] | @base64'); do
-            _jq() {
-              echo ${item} | base64 --decode | jq -r ${1}
-            }
-            title=$(_jq '.title')
-            link=$(_jq '.link')
-            description=$(_jq '.description')
-            echo "Processing article: $title"
-            # Add article link to README file
-            sed -i "s|<!-- ARTICLE_LINKS -->|* [$title]($link)\n<!-- ARTICLE_LINKS -->|" README.md
-          git add README.md
-          git commit -m "Update README with new dev article links"
-          git push origin HEAD
+ update-readme-with-blog:
+   name: Update this repo's README with latest blog posts
+   runs-on: ubuntu-latest
+   steps:
+     - uses: actions/checkout@v2
+     - uses: gautamkrishnar/blog-post-workflow@master
+       with:
+         # Replace this URL with your rss feed URL/s
+         feed_list: "https://arindamchowdhury.hashnode.dev/rss.xml"
