@@ -3,7 +3,8 @@ name: Update README with Dev Articles from RSS Feed
 on:
   schedule:
     - cron: "0 0 * * *"
-  workflow_dispatch: 
+  manual:
+    - name: Trigger Manually
 
 env:
   RSS_FEED_URL: "https://arindamchowdhury.hashnode.dev/rss.xml"
@@ -40,7 +41,7 @@ jobs:
 
       - name: Update README with Dev Articles
         run: |
-          for item in $(echo ${{ steps.fetch_feed.outputs.items }} | jq -r '.[] | @base64'); do
+          for item in $(echo "${{ steps.fetch_feed.outputs.items }}" | jq -r '.[] | @base64'); do
             _jq() {
               echo ${item} | base64 --decode | jq -r ${1}
             }
