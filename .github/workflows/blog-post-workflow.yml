@@ -3,6 +3,7 @@ name: Update README with Dev Articles from RSS Feed
 on:
   schedule:
     - cron: "0 0 * * *"
+  workflow_dispatch: 
 
 env:
   RSS_FEED_URL: "https://arindamchowdhury.hashnode.dev/rss.xml"
