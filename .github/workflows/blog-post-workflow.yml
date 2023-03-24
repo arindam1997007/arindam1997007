@@ -1,4 +1,4 @@
-name: Publish Dev Articles from RSS Feed
+name: Update README with Dev Articles from RSS Feed
 
 on:
   schedule:
@@ -37,12 +37,8 @@ jobs:
           console.log(JSON.stringify(items));
           console.log(`::set-output name=items::${JSON.stringify(items)}`);
 
-      - name: Add Articles to Repository
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Update README with Dev Articles
         run: |
-          git config --global user.email "youremail@example.com"
-          git config --global user.name "Your Name"
           for item in $(echo ${{ steps.fetch_feed.outputs.items }} | jq -r '.[] | @base64'); do
             _jq() {
               echo ${item} | base64 --decode | jq -r ${1}
@@ -51,18 +47,8 @@ jobs:
             link=$(_jq '.link')
             description=$(_jq '.description')
             echo "Processing article: $title"
-            # Save article as markdown file in the repository
-            filename=$(echo $title | sed 's/[^a-zA-Z0-9]/-/g' | tr '[:upper:]' '[:lower:]')
-            filecontent="---
-layout: post
-title: \"$title\"
----
-
-$description
-
-[Read more]($link)"
-
-            echo "$filecontent" > $filename.md
-            git add $filename.md
-            git commit -m "Add new dev article: $title"
-          git push
+            # Add article link to README file
+            sed -i "s|<!-- ARTICLE_LINKS -->|* [$title]($link)\n<!-- ARTICLE_LINKS -->|" README.md
+          git add README.md
+          git commit -m "Update README with new dev article links"
+          git push origin HEAD
