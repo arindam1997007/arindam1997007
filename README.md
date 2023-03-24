@@ -13,6 +13,8 @@
 
 ### Blogs posts
 <!-- BLOG-POST-LIST:START -->
+- [Step-by-Step Guide: Host a React App on Firebase using GitHub Actions and Secret Management](https://arindamchowdhury.hashnode.dev/step-by-step-guide-host-a-react-app-on-firebase-using-github-actions-and-secret-management)
+- [Beginner&#39;s guide to data-attributes in CSS](https://arindamchowdhury.hashnode.dev/beginners-guide-to-data-attributes-in-css)
 <!-- BLOG-POST-LIST:END -->
 
 <h3 align="left">Connect with me:</h3>
