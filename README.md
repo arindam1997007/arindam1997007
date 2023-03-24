@@ -17,5 +17,5 @@ Here are some ideas to get you started:
 
 
 # 📩 Latest Blog Posts 
-<!-- ARTICLE_LINKS -->
-<!-- Insert dev article links here -->
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
