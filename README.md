@@ -13,11 +13,11 @@
 
 ### Blogs posts
 <!-- BLOG-POST-LIST:START -->
+- [Automating CSS Grouping in VS Code: A Guide with CSS Organizer](https://arindamchowdhury.hashnode.dev/automating-css-grouping-in-vs-code-a-guide-with-css-organizer)
 - [React input onChange causing lag](https://arindamchowdhury.hashnode.dev/react-input-onchange-causing-lag)
 - [Creating a Beautiful Looping Image Carousel with CSS and JavaScript](https://arindamchowdhury.hashnode.dev/creating-a-beautiful-looping-image-carousel-with-css-and-javascript)
 - [Setting up Prettier and Husky for Automatic Code Formatting](https://arindamchowdhury.hashnode.dev/setting-up-prettier-and-husky-for-automatic-code-formatting)
 - [Step-by-Step Guide: Host a React App on Firebase using GitHub Actions and Secret Management](https://arindamchowdhury.hashnode.dev/step-by-step-guide-host-a-react-app-on-firebase-using-github-actions-and-secret-management)
-- [Beginner&#39;s guide to data-attributes in CSS](https://arindamchowdhury.hashnode.dev/beginners-guide-to-data-attributes-in-css)
 <!-- BLOG-POST-LIST:END -->
 
 <h3 align="left">Connect with me:</h3>
