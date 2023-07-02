@@ -7,6 +7,8 @@
 
 - 🌱 I’m currently learning **React**
 
+- 📝 [Resume ](https://t.co/HT6xchtFo2)
+
 - 📝 I regularly write articles on [https://arindamchowdhury.hashnode.dev/](https://arindamchowdhury.hashnode.dev/)
 
 - ⚡ Fun fact **I love doing photography**
