@@ -20,11 +20,11 @@
 
 ### Blogs posts
 <!-- BLOG-POST-LIST:START -->
+- [How to Make Your Website Pop with a Floating Gradient Blob in the Background](https://arindamchowdhury.hashnode.dev/how-to-make-your-website-pop-with-a-floating-gradient-blob-in-the-background)
 - [Integrating Better-SQLite3 with Electron JS App using Create-React-App](https://arindamchowdhury.hashnode.dev/integrating-better-sqlite3-with-electron-js-app-using-create-react-app)
 - [Achieve a Glow Effect in VS Code](https://arindamchowdhury.hashnode.dev/achieve-a-glow-effect-in-vs-code)
 - [Automating CSS Grouping in VS Code: A Guide with CSS Organizer](https://arindamchowdhury.hashnode.dev/automating-css-grouping-in-vs-code-a-guide-with-css-organizer)
 - [React input onChange causing lag](https://arindamchowdhury.hashnode.dev/react-input-onchange-causing-lag)
-- [Creating a Beautiful Looping Image Carousel with CSS and JavaScript](https://arindamchowdhury.hashnode.dev/creating-a-beautiful-looping-image-carousel-with-css-and-javascript)
 <!-- BLOG-POST-LIST:END -->
 
 <h3 align="left">Connect with me:</h3>
