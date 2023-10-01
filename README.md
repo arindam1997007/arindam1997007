@@ -10,7 +10,7 @@
 
 
 
-- 🌱 I’m currently learning **React**
+- 🌱 I’m currently learning **Next**
 
 - 🔍 Check my Resume [here](https://t.co/HT6xchtFo2)
 
