@@ -12,7 +12,7 @@
 
 - 🌱 I’m currently learning **Next**
 
-- 🔍 Check my Resume [here](https://t.co/HT6xchtFo2)
+- 🔍 Check my Resume [here](https://drive.google.com/file/d/1euZQawH61DU3JiMWjguysaM-Fk49UY1J/view?usp=sharing)
 
 - 📝 I regularly write articles on [https://arindamchowdhury.hashnode.dev/](https://arindamchowdhury.hashnode.dev/)
 
