@@ -14,7 +14,7 @@
 
 - 🔍 Check my Portfolio [here](https://arindam-chowdhury.vercel.app/)
 
-- 📝 I regularly write articles on [https://arindamchowdhury.hashnode.dev/](https://arindamchowdhury.hashnode.dev/)
+- 📝 I regularly write articles on [Hashnode](https://arindamchowdhury.hashnode.dev/) and [Dev.to](https://dev.to/arindam1997007)
 
 - ⚡ Fun fact **I love doing photography**
 
